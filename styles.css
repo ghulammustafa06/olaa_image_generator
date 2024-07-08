@@ -124,3 +124,76 @@ body {
     margin-bottom: 10px;
     margin-top: 10px;
 }
+
+img[src="loading_img.svg"] {
+    width: 80px; 
+    height: 80px; 
+    display: block; 
+}
+
+.footer p {
+    background-color: transparent;
+    color: 333;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    margin-top: 30px;
+    width: 100%;
+}
+
+@media screen and (max-width: 668px) {
+    .image_generator h1 {
+        font-size: 1.5rem;
+        margin-left: 145px;
+    }
+
+    .image_generator p {
+        font-size: 0.6rem;
+        margin-left: 150px;
+    }
+
+    .image_generator_form {
+    
+      margin-top: 20px;
+      margin-left: 100px;
+      justify-content: center;
+      height: 25px;
+      display: block;
+
+     }
+
+     .controls {
+        height: 40px;
+        margin-top: 20px;
+        align-items: center;
+        justify-content: center;
+  
+       }
+
+       .image_quanitiy {
+        color: #dbdbad;
+        border-radius: 5px;
+        width: 100px;
+        height: 30px;
+        text-align: center;
+        background-color: rgba(245, 222, 179, 0.116);
+       }
+
+       .image_quanitiy .option {
+        color: #121212;
+       }
+     
+     .prompt_intput {
+         width: 90%;
+         height: 60%;
+         border: none;
+         outline: none;
+         margin-top: 7px;
+         font-size: .8rem;
+         text-align: center;
+     }
+
+}
+
