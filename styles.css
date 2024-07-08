@@ -49,3 +49,39 @@ body {
     font-size: 1rem;
 
 }
+
+.image_generator_form {
+    height: 36px;
+    width: 100%;
+    padding: 6px;
+    margin: 45px 0 15px;
+    background-color: #fff;
+    border-radius: 25px;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+ 
+ .prompt_intput {
+     width: 100%;
+     height: 60%;
+     border: none;
+     outline: none;
+     padding: 0 8px;
+     font-size: 1rem;
+     border-radius: none;
+ }
+ 
+ .controls {
+     display: flex;
+     height: 100%;
+     gap: 10px;
+ }
+ 
+ .image_quanitiy {
+     border: none;
+     outline: none;
+     border-radius: none;
+     font-size: 1rem; 
+ }
+ 
