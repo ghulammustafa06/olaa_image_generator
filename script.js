@@ -34,4 +34,35 @@ const updateImageGallery = (imagesDataArray) => {
                  response_format: "b64_json"
              })
          });
- 
+ // Throw an error message if the API response is unsuccessful
+ if (!response.ok) {
+    throw new Error('Failed to generate images, please try again later.');
+}
+
+const data = await response.json();
+updateImageGallery(data.data);
+
+} catch (error) {
+alert(error.message);
+isImageGenerating = false;
+}
+};
+
+// function that handles the form submission
+const handleFormSubmit = (e) => {
+e.preventDefault();
+
+const userPrompt = e.target[0].value;
+const userImgQuantity = parseInt(e.target[1].value, 10);
+
+const imageCards = Array.from({ length: userImgQuantity }, () =>
+`<div class="image_card loading_img">
+    <img src="loading_img.svg" alt="Generated Image"> 
+</div>`
+).join('');
+
+imageGallery.innerHTML = imageCards;
+generateAIImages(userPrompt, userImgQuantity);
+};
+
+generateForm.addEventListener('submit', handleFormSubmit);
