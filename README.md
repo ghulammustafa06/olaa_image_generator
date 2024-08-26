@@ -1,6 +1,12 @@
+[![Try Out](https://github.com/ghulammustafa06/hotel_reservation_websites/blob/main/Assets/Images/repo-img.png)](https://ghulammustafa06.github.io/olaa_image_generator/)
+
+
 # OLAA Image Generator
 
 The OLAA Image Generator is a web application designed to generate images based on user-defined prompts using the OpenAI API. The application provides a user-friendly interface to input prompts, select the number of images to generate, and view the generated images in an interactive gallery.
+
+![image](https://github.com/user-attachments/assets/8bcdcc16-7af5-4d6b-b3dc-39ae3ed30f35)
+
 
 ## Features
 
